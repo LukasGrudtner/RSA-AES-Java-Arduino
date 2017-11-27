@@ -5,6 +5,7 @@ public class KeyGenerator {
 	private static final int b = 3;
 	private int g;
 	private int p;
+	private int simpleKey;
 	private static final int public_key = 8736;
 	private static final int private_key = 3782;
 	
@@ -22,6 +23,14 @@ public class KeyGenerator {
 	
 	public int getPrivateKey() {
 		return private_key;
+	}
+	
+	public void setSimpleKey(int simpleKey) {
+		this.simpleKey = simpleKey;
+	}
+	
+	public int getSimpleKey() {
+		return simpleKey;
 	}
 	
 	public void setG(int g) {
